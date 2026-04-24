@@ -7,7 +7,7 @@ function toggleMenu() {
   }
 }
 
-window.addEventListener("load", () => {
+window.addEventListener("DOMContentLoaded", () => {
   const canvas = document.getElementById("loaderCanvas");
   const ctx = canvas.getContext("2d");
   const bar = document.getElementById("bar");
