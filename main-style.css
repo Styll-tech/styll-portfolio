@@ -488,7 +488,7 @@ html {
 }
 
 .about-section {
-  scroll-margin-top: 75px;
+  scroll-margin-top: 25px;
   padding: 100px 50px;
   max-width: 1200px;
   margin: 0 auto;
@@ -785,7 +785,7 @@ html {
   padding: 100px 50px 40px 50px;
   max-width: 1200px;
   margin: 0 auto;
-  scroll-margin-top: 75px;
+  scroll-margin-top: 25px;
 }
 
 .contact-container {
