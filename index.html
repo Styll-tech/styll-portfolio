@@ -1,0 +1,303 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio Website</title>
+    <link rel="icon" type="image/png" href="The first art im proud of.jpeg" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="main-style.css" />
+  </head>
+  <body>
+    <div id="loader">
+      <canvas id="loaderCanvas"></canvas>
+
+      <div class="loader-content">
+        <div class="loader-icon">&lt;/&gt;</div>
+        <div class="progress-container">
+          <div class="progress-bar" id="bar"></div>
+        </div>
+        <div class="percent" id="percent">0%</div>
+      </div>
+    </div>
+    <nav class="navbar">
+      <div class="logo">Styll</div>
+
+      <ul class="nav-links" id="navLinks">
+        <li class="close-menu" onclick="toggleMenu()">
+          <i class="fas fa-times"></i>
+        </li>
+        <li><a href="#Home" onclick="toggleMenu()">Home</a></li>
+        <li><a href="#About" onclick="toggleMenu()">About</a></li>
+        <li><a href="#Work" onclick="toggleMenu()">Work</a></li>
+        <li><a href="#Skills" onclick="toggleMenu()">Skills</a></li>
+        <li><a href="#Contact" onclick="toggleMenu()">Contact</a></li>
+      </ul>
+
+      <div class="nav-cta">
+        <a href="https://wa.me/917982389134" target="_blank" class="chat-btn"
+          >Let's chat</a
+        >
+        <i class="fas fa-bars menu-btn" onclick="toggleMenu()"></i>
+      </div>
+    </nav>
+
+    <header id="Home" class="hero">
+      <div class="hero-left">
+        <div class="tag" style="display: inline-block; margin-bottom: 10px">
+          NICK_NAME = STYLL
+        </div>
+        <h1>I code <span>logic</span><br />into digital reality.</h1>
+        <p>
+          "Technically-driven developer specializing in software logic and game
+          mechanics. With a deep proficiency in Python and JavaScript, I focus
+          on the intersection of mathematical precision and user experience.
+          Beyond my academic studies, I am currently engaged in a long-term
+          technical mastery series, refining my ability to translate complex
+          logic into high-performance applications."
+        </p>
+
+        <div class="tags">
+          <span class="tag"><i class="fab fa-python"></i> Python</span>
+          <span class="tag"><i class="fab fa-js"></i> JavaScript</span>
+          <span class="tag"><i class="fas fa-code"></i> C Language</span>
+          <span class="tag"><i class="fas fa-terminal"></i> Lua</span>
+        </div>
+      </div>
+
+      <div class="hero-right">
+        <div class="profile-frame"><img src="boyd.jpeg" alt="" /></div>
+      </div>
+    </header>
+    <div class="bg-animation">
+      <div class="grid-lines"></div>
+      <div class="scan-line"></div>
+    </div>
+    <section id="About" class="about-section">
+      <div class="about-container">
+        <div class="about-content">
+          <div class="tag">01 - THE_DEVELOPER</div>
+          <h2>About <span>ME</span></h2>
+          <p>
+            I’m a BCA student passionate about building clean and functional
+            digital experiences. I focus on web development and enjoy working
+            with technologies like HTML, CSS, JavaScript, and Python to create
+            responsive and user-friendly projects.
+          </p>
+          <p>
+            I’m constantly learning and improving through hands-on projects and
+            challenges, aiming to turn ideas into real-world solutions. I also
+            enjoy sharing my coding journey and experimenting with creative tech
+            content. My goal is to grow as a developer and contribute to
+            meaningful projects while continuously evolving my skills.
+          </p>
+
+          <div class="milestones">
+            <div class="milestone-box">
+              <h3>100+</h3>
+              <p>Ideas Explored</p>
+            </div>
+            <div class="milestone-box">
+              <h3>4+</h3>
+              <p>Core Languages</p>
+            </div>
+            <div class="milestone-box">
+              <h3>3+</h3>
+              <p>Project build</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-visual">
+          <div class="terminal-window">
+            <div class="terminal-header">
+              <span class="dot red"></span><span class="dot yellow"></span
+              ><span class="dot green"></span>
+            </div>
+            <div class="terminal-body">
+              <p><span>></span> styll.status</p>
+              <p class="output">"Building the future of game logic..."</p>
+              <p><span>></span> styll.location</p>
+              <p class="output">"Semester 05 // IGNOU"</p>
+              <p><span>></span> styll.interests</p>
+              <p class="output">"Gaming", "Novels_reading", "UI/UX Designer"</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="Work" class="work-section">
+      <div class="tag">02 - RECENT_PROJECTS</div>
+      <h2 class="section-title">My <span>WORK</span></h2>
+
+      <div class="work-grid">
+        <div class="project-card">
+          <div class="project-img">
+            <img src="devflow.png" alt="Project One" />
+          </div>
+          <div class="project-info">
+            <h3>"DevFlow"</h3>
+            <div class="project-langs">
+              <span class="lang-tag">Python</span>
+            </div>
+            <p class="project-quote">
+              "Build smarter, code better—DevFlow keeps your progress, snippets,
+              and tasks in one clean workspace."
+            </p>
+          </div>
+        </div>
+        <a
+          href="https://styll-tech.github.io/project1-Weather-api-/"
+          target="_blank"
+          class="project-link"
+        >
+          <div class="project-card">
+            <div class="project-img">
+              <img src="weatherapi.png" alt="Project Two" />
+            </div>
+            <div class="project-info">
+              <h3>Weather Api</h3>
+              <div class="project-langs">
+                <span class="lang-tag">JavaScript/API's</span>
+                <span class="lang-tag">HTML/CSS</span>
+              </div>
+              <p class="project-quote">
+                "Get real-time weather updates with clear insights—plan your day
+                with confidence."
+              </p>
+            </div>
+          </div>
+        </a>
+        <a
+          href="https://styll-tech.github.io/random-vide-coding-/"
+          target="_blank"
+          class="project-link"
+        >
+          <div class="project-card">
+            <div class="project-img">
+              <img src="hands-up.png" alt="Project Three" />
+            </div>
+            <div class="project-info">
+              <h3>Heads up-(Clue&Guess)</h3>
+              <div class="project-langs">
+                <span class="lang-tag">JavaScript</span>
+                <span class="lang-tag">HTMl/CSS</span>
+              </div>
+              <p class="project-quote">
+                "Give clever clues, think fast, and guess the word before
+                everyone else."
+              </p>
+            </div>
+          </div>
+        </a>
+      </div>
+    </section>
+    <section id="Skills" class="skills-section">
+      <div class="tag">03 - TECHNICAL_STACK</div>
+      <h2 class="section-title">My <span>SKILLS</span></h2>
+
+      <div class="skills-grid">
+        <div class="skill-card">
+          <div class="skill-icon"><i class="fab fa-python"></i></div>
+          <h3>Logic & Core</h3>
+          <p>
+            Mastering Pythonic principles and system-level logic in C and Lua.
+          </p>
+          <div class="skill-footer">Python, C, Lua, JavaScript</div>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-icon"><i class="fas fa-code"></i></div>
+          <h3>Web Architecture</h3>
+          <p>
+            Building responsive, dark-themed interfaces with modern JS and CSS.
+          </p>
+          <div class="skill-footer">JS, HTML5, CSS3, Responsive Design</div>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-icon"><i class="fas fa-bezier-curve"></i></div>
+          <h3>UI/UX & Design</h3>
+          <p>
+            Specializing in high-contrast "Dark Mode" aesthetics and intuitive
+            layouts that balance logic with visual impact.
+          </p>
+          <div class="skill-footer">
+            Figma, Adobe, Google Analytics, Prototyping
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="Contact" class="contact-section">
+      <div class="tag">04 - ESTABLISH_CONNECTION</div>
+      <h2 class="section-title">Get in <span>TOUCH</span></h2>
+
+      <div class="contact-container">
+        <div class="contact-info">
+          <p class="contact-description">
+            I'm currently looking for new opportunities and collaborations.
+            Whether you have a question about logic, UI/UX, or just want to say
+            hi, my inbox is always open.
+          </p>
+
+          <div class="contact-details">
+            <div class="detail-item">
+              <i class="fas fa-envelope"></i>
+              <span>Jainthparas@gmail.com</span>
+            </div>
+            <div class="detail-item">
+              <i class="fas fa-location-dot"></i>
+              <span>Delhi, India</span>
+            </div>
+          </div>
+
+          <div class="social-links">
+            <a href="https://github.com/styll-tech" target="_blank"
+              ><i class="fab fa-github"></i
+            ></a>
+            <a href="https://wa.me/917982389134" target="_blank"
+              ><i class="fab fa-whatsapp"></i
+            ></a>
+            <a
+              href="https://www.linkedin.com/in/paras-jainth-6267653a0/"
+              target="_blank"
+              ><i class="fab fa-linkedin"></i
+            ></a>
+          </div>
+        </div>
+
+        <div class="contact-visual">
+          <div class="terminal-window">
+            <div class="terminal-header">
+              <span class="dot red"></span><span class="dot yellow"></span
+              ><span class="dot green"></span>
+            </div>
+            <div class="terminal-body">
+              <p><span>></span> contact.initiate()</p>
+              <p class="output">"Searching for available channels..."</p>
+              <p><span>></span> contact.methods</p>
+              <p class="output">["WhatsApp", "Email", "GitHub"]</p>
+              <p>
+                <span>></span>
+                <a
+                  href="https://wa.me/917982389134"
+                  target="_blank"
+                  class="terminal-link"
+                  >run chat_now.sh</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer class="main-footer">
+        <p>Built with logic & precision by <span>Styll</span> &copy; 2026</p>
+      </footer>
+    </section>
+  </body>
+  <script src="main-logic.js"></script>
+</html>
